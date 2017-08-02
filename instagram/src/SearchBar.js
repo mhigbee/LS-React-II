@@ -1,27 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SearchBar.css';
 
-class SearchBar extends Component {
-  constructor() {
-    super();
-  }
-    render() {
-      return (
-        <div>
-          <p>Logo</p>
-          <form>
-            <input placeholder="Search"
-            onChange={this.handleInputChange}
-            />  
-            </form>
-        </div>
-      );
-    }
+const SearchBar = () => {
+  return (
+    <div>
+      <p>Logo</p>
+      <input placeholder="Search"
+      />
+      <p>Heart Icon</p>
+      <p>Profile Icon</p>
+    </div>
+  );
 };
 
 export default SearchBar;
-
-
 
 // on the icon bar left hand side is just logo
 // then a search bar
